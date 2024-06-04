@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <style>
+        body{
+            border: 2px solid green;
+            max-width: 94vw;
+            margin: 0 auto;
+        }
+        .container{
+            display: flex;
+        }
+        .container div{
+            width: 50%;
+        }
+        .container img{
+            width: 100%;
+        }
+
+        @media screen and (max-width: 576px) {
+            .container{
+                flex-direction: column;
+            }
+            .container div{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Responsive Website</h2>
+        <ol>
+            <li>Viewport eta tag</li>
+            <li>CSS Relative Unit</li>
+            <li>body max-width amd horizontal align centar</li>
+            <li>image fluid</li>
+            <li>2 column flex and use media quary with flex-direction column</li>
+            <li>Multi column: grid layout</li>
+            <li>Menu Responsive : need javascript</li>
+        </ol>
+    </header>
+    <main>
+        <div class="container">
+            <div>
+                <img src="images/burger.jpeg" alt="">
+            </div>
+            <div>
+                <img src="images/tigar.jpeg" alt="">
+            </div>
+        </div>
+    </main>
+</body>
+</html>
