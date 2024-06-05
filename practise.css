@@ -1,0 +1,104 @@
+/* Task -1 */
+
+.task-1{
+    width: 90vw;
+    border: 2px solid black;
+    margin: 10px auto;
+    display: flex;
+    height: 80vh;
+    border-radius: 16px;
+}
+.box-1{
+    width: 30%;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    margin: 8px;
+}
+.box-2{
+    width: 70%;
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    margin: 8px;
+}
+
+@media screen and (max-width: 576px) {
+    .task-1{
+        flex-direction: column  ;
+
+    }
+    .box-1{
+        height:30%;
+        width: auto;
+    }
+    .box-2{
+      height:70%;
+      width: auto;
+    }
+}
+
+
+/* Task - 2 */
+
+.task-2{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows: 200px;
+    gap: 10px;
+}
+.other-color-div{
+    display: grid;
+    grid-template-rows:100px;
+    gap: 10px;
+}
+.last-2-div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+
+.color-box-1{
+    background-color: brown;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 3em;
+    color: white;
+}
+.color-box-2{
+    background-color: sandybrown;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 3em;
+    color: white;
+}
+.color-box-3{
+    background-color: purple;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 3em;
+    color: white;
+}
+.color-box-4{
+    background-color:cadetblue;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 3em;
+    color: white;
+}
+
+
+@media screen and (max-width: 576px) {
+    .task-2,.other-color-div,.last-2-div{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1,1fr);
+    }
+}
+
+
+/* Task - 3 */
+
